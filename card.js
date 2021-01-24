@@ -35,14 +35,14 @@ const questions = [
     {
         type: "list",
         name: "action",
-        message: "What you want to do?",
+        message: "What do you wanna do?",
         choices: [
             //// Send an email
             {
                 name: `Send me an ${chalk.green.bold("email")}?`,
                 value: () => {
                     open(`mailto:${user_email}`);
-                    console.log("\nDone, see you soon at inbox.\n");
+                    console.log("\nDone, see you soon in my inbox.\n");
                 },
             },
             //// Download Resume
@@ -72,7 +72,7 @@ const questions = [
             {
                 name: "Just quit.",
                 value: () => {
-                    console.log("Hasta la vista.\n");
+                    console.log("Bon voyage.\n");
                 },
             },
         ],
